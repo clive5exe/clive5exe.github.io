@@ -20,16 +20,8 @@
 })();
 </script>
     <title>Deus XT: I built it after my sixth Wacom broke – Clive S. — AI Engineer</title>
-<meta content="After my sixth Wacom broke, I spent six weeks building an app that lets my iPad and Apple Pencil work like the pen tablet I'd been using for years." name="description"/>
-<style>
-.deus-demo-stage{display:grid;grid-template-columns:minmax(0,2.65fr) minmax(0,1fr);align-items:center;gap:clamp(.7rem,3.4vw,2.75rem);padding:clamp(.85rem,4vw,3rem);background:#eeebe5;border-radius:12px}
-:root[data-theme="dark"] .deus-demo-stage{background:#292724}
-.deus-demo-output,.deus-demo-ipad{min-width:0;box-sizing:border-box;box-shadow:0 12px 24px #14141430}
-.deus-demo-output{border:1px solid #575755;border-radius:7px;overflow:hidden}
-.deus-demo-ipad{background:#101012;border:1px solid #777879;border-radius:clamp(10px,2vw,22px);padding:clamp(4px,.75vw,10px);overflow:hidden}
-.deus-demo-stage img{display:block;width:100%;height:auto;margin:0}
-.deus-demo-ipad img{border-radius:clamp(5px,1.15vw,12px)}
-</style>
+<meta name="description" content="How I turned an iPad and Apple Pencil into a drawing tablet after my sixth Wacom broke. The macOS build, Windows and Linux betas, and what I tested." />
+<link rel="stylesheet" href="case-study.css" />
 <link rel='dns-prefetch' href='https://clive5exe.github.io' />
 <style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
@@ -479,27 +471,71 @@ body.single main.wp-block-group > .wp-block-spacer{height:0 !important;display:n
 
 <main class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-3e847da4 wp-block-group-is-layout-flex" id="wp--skip-link--target" style="margin-top:var(--wp--preset--spacing--50)">
 <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-a5347798 wp-block-group-is-layout-constrained"><h1 class="has-text-align-center wp-block-post-title" style="margin-bottom:var(--wp--preset--spacing--40)">Deus XT: I built it after my sixth Wacom broke</h1></div>
-<div class="entry-content wp-block-post-content has-global-padding is-layout-constrained wp-container-core-post-content-is-layout-3339a43b wp-block-post-content-is-layout-constrained"><p class="wp-block-paragraph">The first Wacom wasn't even mine. I was a sysadmin at a clothing brand, and when I had to fix something on a designer's computer, I'd pick up the pen instead of plugging in a mouse. Somehow that turned into twenty years of typing with a pen in my hand.</p>
-<figure class="wp-block-image alignwide deus-demo">
-  <div class="deus-demo-stage">
-    <div class="deus-demo-output">
-      <img src="/projects/deus-xt/demo-krita-pressure.jpg" width="1400" height="909" fetchpriority="high" alt="Krita desktop canvas with thin and thick strokes from the Deus XT pressure demo">
-    </div>
-    <div class="deus-demo-ipad">
-      <img src="/projects/deus-xt/ipad-rail-pressure-solid.jpg" width="668" height="1200" alt="Deus XT pressure-curve editor, shown in a portrait iPad frame">
+<article class="deus-case-study entry-content wp-block-post-content has-global-padding is-layout-constrained wp-container-core-post-content-is-layout-3339a43b wp-block-post-content-is-layout-constrained">
+<figure class="deus-figure deus-hero alignwide">
+  <div class="deus-stage">
+    <div class="deus-ipad">
+      <img src="ipad-welcome.png" width="2064" height="1548" fetchpriority="high" alt="Deus XT welcome screen with an illustrated desktop computer and a Get started button">
     </div>
   </div>
-  <figcaption class="wp-element-caption">Left: a Deus XT pressure test in Krita. Right: the pressure curve controls on iPad.</figcaption>
+  <figcaption>Step one of six on the iPad. The welcome takes you through installing the companion, pairing and trying the Pencil before you send a stroke to the Mac.</figcaption>
 </figure>
-<p class="wp-block-paragraph">When number six broke, I could spend another $400 on a tablet, plus whatever the pens and wireless dongle would cost me. Or I could spend six weeks building a replacement for the 13-inch iPad I already had. The sensible thing probably would've been to buy the Wacom. Anyway, here's <a href="https://deusxt.com">Deus XT</a>.</p>
-<h2 class="wp-block-heading">Why absolute mapping matters</h2>
-<p class="wp-block-paragraph">Start with the cursor at the bottom left of your screen. Lift the pen and bring it down at the top right of the tablet. The cursor jumps straight to the top right. Where it started doesn't matter. That's absolute mapping, and it's why I could type a command with the pen still in my hand, then go straight back to the spot I wanted without dragging a cursor across the screen.</p>
-<p class="wp-block-paragraph">I looked at Astropad and Duet, but what I wanted most was a pen surface, not another screen. I built the iPad app and desktop companions myself and used them heavily during those six weeks. The Pencil maps to a whole display or a region, and pressure, tilt, and hover reach the drawing app over USB-C or local Wi-Fi. Display mode can mirror or extend the desktop, but you don't need to stream the screen to use the iPad as a pen tablet.</p>
-  <figure class="wp-block-image">
-    <img src="mac-panel-connected.png" width="340" height="399" loading="lazy" decoding="async" alt="Mac menu-bar panel showing a 13-inch iPad Pro connected over USB, with mapping and pressure controls" style="width:auto;max-width:100%;height:auto">
-    <figcaption class="wp-element-caption">The Mac companion shows the connected iPad and gives you quick access to mapping, pressure, and pause.</figcaption>
-  </figure>
-<p class="wp-block-paragraph"><a href="https://deusxt.com">Visit Deus XT</a> · <a href="/projects/">All projects</a></p></div>
+
+<p>The first Wacom wasn't even mine. I was a sysadmin at a clothing brand, and when I had to fix something on a designer's computer, I'd pick up the pen instead of plugging in a mouse. Somehow that turned into twenty years of typing with a pen in my hand.</p>
+<p>My sixth Wacom died the way they all do: one day the pen just stopped registering pressure. There was already a 13-inch iPad Pro and an Apple Pencil Pro on my desk, doing a fine job of showing me notifications. I could spend another $400 on a tablet, plus whatever the pens and wireless dongle would cost me. Or I could spend six weeks building a replacement using the iPad I already owned. The sensible thing probably would've been to buy the Wacom. Anyway, here's <a href="https://deusxt.com/">Deus XT</a>.</p>
+
+<h2 class="wp-block-heading">A tablet first, a display when I need one</h2>
+<p>Tablet mode leaves the iPad as a drawing surface with no ink on the glass. I look at the desktop, just as I did with an Intuos. Start with the cursor at the bottom left, lift the Pencil, and bring it down at the top right of the iPad. The pointer goes straight to the corresponding corner. That's absolute mapping, and it's why I can type a command with the pen still in my hand and get back to the spot I wanted without dragging the cursor across the screen. I can map to one display or just the bit I'm working in, keep the proportions so circles stay round, or switch to relative mouse movement for menus.</p>
+<p>Hover tells me where the stroke will land on hardware that supports it. Tilt gives a brush the side of the pencil; the pressure curve decides how hard I have to press. Soft makes light strokes come through stronger, Firm saves the heaviest strokes for when I lean in, and I can drag the curve if neither preset suits my hand. On the Mac, <a href="https://deusxt.com/help-display-mode.html">Display mode</a> can mirror or extend the desktop onto the iPad. I use the same Pencil to draw directly on the picture instead of looking across at another screen.</p>
+<figure class="deus-figure">
+  <a class="deus-screen" href="ipad-pressure.png" aria-label="Open the full-size Pressure screenshot">
+    <img src="ipad-pressure.png" width="2064" height="1548" loading="lazy" decoding="async" alt="Pressure editor with a five-point linear curve, presets and a Pencil test button">
+  </a>
+  <figcaption>The Pressure panel maps what the Pencil reads to what the drawing app receives. Linear is selected here; the points are editable, and the Pencil test is right below.</figcaption>
+</figure>
+
+<h2 class="wp-block-heading">What my other hand does</h2>
+<p>The little things came out of using it every day. I wanted Space under my thumb for panning and modifiers beside it, rather than reaching for the keyboard in the middle of a stroke. App keys follow the foreground app, so the shortcuts can change when I switch tools. I can put undo on a squeeze or double-tap on supported Pencils, and a two-finger scroll handles the ordinary business of moving around a document.</p>
+<figure class="deus-figure">
+  <a class="deus-screen" href="ipad-app-keys.png" aria-label="Open the full-size App keys screenshot">
+    <img src="ipad-app-keys.png" width="2064" height="1548" loading="lazy" decoding="async" alt="App keys panel with a wheel preview, visibility choices and a row of pinned apps">
+  </a>
+  <figcaption>App keys shows what's pinned to the app wheel and lets me keep it visible, bring it up near the Pencil, or wait for a squeeze.</figcaption>
+</figure>
+<p>Write is for the little interruptions that still need a keyboard: a layer name, a filename, a search. I put the cursor in a text field on the Mac, write on the iPad, and send the result to that field. Apple does the recognition on the iPad. The Mac gets text, not a picture of my handwriting.</p>
+<figure class="deus-figure">
+  <a class="deus-screen" href="ipad-write.png" aria-label="Open the full-size Write screenshot">
+    <img src="ipad-write.png" width="2064" height="1548" loading="lazy" decoding="async" alt="Write panel with handwritten hello, the recognized word above it and a Send button">
+  </a>
+  <figcaption>Write shows the ink and the recognized text separately. The “hello” in the top field is what goes to the focused app on the Mac.</figcaption>
+</figure>
+
+<h2 class="wp-block-heading">One iPad, three desktop input paths</h2>
+<p>The iPad app needs iPadOS 18 or later and a pressure-capable Apple Pencil. The <a href="https://deusxt.com/download.html">download page</a> lists the current macOS companion alongside two desktop betas. Windows and Linux share a Rust core, but getting those pen samples into a drawing app is a different job on each OS.</p>
+<dl class="deus-platforms">
+  <div><dt>macOS</dt><dd>The menu-bar companion runs on Apple silicon with macOS 15 or later. It produces native tablet events, including pressure, tilt and proximity, and needs Accessibility permission to send input. It has Tablet and Display modes over USB-C or local Wi-Fi. Only Display needs Screen Recording.</dd></div>
+  <div><dt><a href="https://deusxt.com/help-windows.html">Windows beta</a></dt><dd>64-bit Windows 10 (1809 or later) or 11. The companion sends pen input through Windows Ink on the primary monitor. An app set to Wintab only won't get pressure. Tablet mode is Wi-Fi only; no Display mode or USB.</dd></div>
+  <div><dt><a href="https://deusxt.com/help-linux.html">Linux beta</a></dt><dd>On x86-64, the connector uses <code>uinput</code> to present a virtual pen to X11 or Wayland. The installer grants access to the device and uses Avahi for discovery. It's also Tablet mode over Wi-Fi only, with no Display mode or USB.</dd></div>
+</dl>
+
+<h2 class="wp-block-heading">What stays on the desk</h2>
+<p>On Mac, the Wi-Fi link runs over QUIC with TLS 1.3. Confirming the matching pairing code on both devices establishes trust; the pairing keys stay in each device's Keychain. Once Wi-Fi is paired, Auto uses the cable when it's plugged in and falls back to the local network when I unplug it. Display mode adds a stream in the other direction: ScreenCaptureKit captures the Mac screen, VideoToolbox encodes it as H.264, and Metal draws it on the iPad. The stream isn't recorded or uploaded. There's no account or cloud relay for drawing.</p>
+<figure class="deus-figure">
+  <a class="deus-screen" href="ipad-connection.png" aria-label="Open the full-size connection screenshot">
+    <img src="ipad-connection.png" width="2064" height="1548" loading="lazy" decoding="async" alt="iPad connection panel with the Mac connected over USB and Tablet selected">
+  </a>
+  <figcaption>The iPad's Mac panel, with USB and Tablet selected. Route and drawing mode are separate choices. The badge tells me how I'm connected, not how long a stroke takes to reach the screen.</figcaption>
+</figure>
+
+<h2 class="wp-block-heading">What I actually tested</h2>
+<p>My setup was a 13-inch iPad Pro (M5), Apple Pencil Pro and an M2 MacBook Air. In Photoshop 2026 I checked pressure, tilt, hover and modifiers, then cut Wi-Fi and force-quit the Mac companion mid-stroke to check that nothing stayed pressed. In Krita I checked pressure; the other checks are still open. The <a href="https://deusxt.com/compatibility.html">compatibility page</a> separates those results from expected support. It lists Windows and Linux as not yet tested on real hardware, and Display over USB as partly tested. I haven't measured pen-to-pixel latency end to end. A number that sounds good but wasn't measured is a lie with a decimal point.</p>
+
+<h2 class="wp-block-heading">How I built it, and who gets to ship it</h2>
+<p>I built the Swift apps with Claude Code agents split into 17 roles. Pencil input and Mac tablet events had different owners, as did transport, Display mode and packaging. Review and QA had to leave written evidence before a work package could close; changes to purchases, pairing, permissions or privacy also needed the security gate. A green build can't tell me whether a modifier gets stuck when I pull the cable. That's a hardware test, and it needs a record.</p>
+<p>The 8 GB MacBook Air also ran CI. Two agents at a time was plenty. (One evening the load average hit 390. We don't talk about that evening.) Shell and Git hooks kept the agents on branches and away from merging and release commands. They could open PRs; I merged and handled signing, notarization and submission. When Apple asked for a demo video on the first submission, I put off filming it for three weeks. Building a QUIC transport: fine. Propping my phone against a mug and drawing a squiggle on camera: apparently a mountain.</p>
+<p>The desktop companion is free. The iPad app has a seven-day trial and a $14.99 one-time purchase. There's no server for me to pay for every month, so I'm not going to bill you every month.</p>
+<p><a href="https://deusxt.com/download.html">Get Deus XT</a> · <a href="https://deusxt.com/help.html">Help and setup</a> · <a href="/projects/">All projects</a></p>
+</article>
 <div aria-hidden="true" class="wp-block-spacer wp-container-content-0a90f32d" style="height:256px"></div>
 <section class="wp-block-template-part"></section></main>
 
