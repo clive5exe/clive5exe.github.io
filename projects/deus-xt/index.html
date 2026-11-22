@@ -21,6 +21,15 @@
 </script>
     <title>Deus XT: I built it after my sixth Wacom broke – Clive S. — AI Engineer</title>
 <meta content="After my sixth Wacom broke, I spent six weeks building an app that lets my iPad and Apple Pencil work like the pen tablet I'd been using for years." name="description"/>
+<style>
+.deus-demo-stage{display:grid;grid-template-columns:minmax(0,2.65fr) minmax(0,1fr);align-items:center;gap:clamp(.7rem,3.4vw,2.75rem);padding:clamp(.85rem,4vw,3rem);background:#eeebe5;border-radius:12px}
+:root[data-theme="dark"] .deus-demo-stage{background:#292724}
+.deus-demo-output,.deus-demo-ipad{min-width:0;box-sizing:border-box;box-shadow:0 12px 24px #14141430}
+.deus-demo-output{border:1px solid #575755;border-radius:7px;overflow:hidden}
+.deus-demo-ipad{background:#101012;border:1px solid #777879;border-radius:clamp(10px,2vw,22px);padding:clamp(4px,.75vw,10px);overflow:hidden}
+.deus-demo-stage img{display:block;width:100%;height:auto;margin:0}
+.deus-demo-ipad img{border-radius:clamp(5px,1.15vw,12px)}
+</style>
 <link rel='dns-prefetch' href='https://clive5exe.github.io' />
 <style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
@@ -471,24 +480,25 @@ body.single main.wp-block-group > .wp-block-spacer{height:0 !important;display:n
 <main class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-3e847da4 wp-block-group-is-layout-flex" id="wp--skip-link--target" style="margin-top:var(--wp--preset--spacing--50)">
 <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-a5347798 wp-block-group-is-layout-constrained"><h1 class="has-text-align-center wp-block-post-title" style="margin-bottom:var(--wp--preset--spacing--40)">Deus XT: I built it after my sixth Wacom broke</h1></div>
 <div class="entry-content wp-block-post-content has-global-padding is-layout-constrained wp-container-core-post-content-is-layout-3339a43b wp-block-post-content-is-layout-constrained"><p class="wp-block-paragraph">The first Wacom wasn't even mine. I was a sysadmin at a clothing brand, and when I had to fix something on a designer's computer, I'd pick up the pen instead of plugging in a mouse. Somehow that turned into twenty years of typing with a pen in my hand.</p>
-<figure class="wp-block-image alignwide">
-  <img src="/projects/deus-xt/ipad-hold-keys.jpg" width="1400" height="965" fetchpriority="high" alt="Deus XT tablet surface on iPad with a vertical row of Photoshop shortcuts on the left">
-  <figcaption class="wp-element-caption">Deus XT in tablet mode. The iPad is the pen surface; Photoshop shortcuts sit on the left.</figcaption>
+<figure class="wp-block-image alignwide deus-demo">
+  <div class="deus-demo-stage">
+    <div class="deus-demo-output">
+      <img src="/projects/deus-xt/demo-krita-pressure.jpg" width="1400" height="909" fetchpriority="high" alt="Krita desktop canvas with thin and thick strokes from the Deus XT pressure demo">
+    </div>
+    <div class="deus-demo-ipad">
+      <img src="/projects/deus-xt/ipad-rail-pressure-solid.jpg" width="668" height="1200" alt="Deus XT pressure-curve editor, shown in a portrait iPad frame">
+    </div>
+  </div>
+  <figcaption class="wp-element-caption">Left: a Deus XT pressure test in Krita. Right: the pressure curve controls on iPad.</figcaption>
 </figure>
 <p class="wp-block-paragraph">When number six broke, I could spend another $400 on a tablet, plus whatever the pens and wireless dongle would cost me. Or I could spend six weeks building a replacement for the 13-inch iPad I already had. The sensible thing probably would've been to buy the Wacom. Anyway, here's <a href="https://deusxt.com">Deus XT</a>.</p>
 <h2 class="wp-block-heading">Why absolute mapping matters</h2>
 <p class="wp-block-paragraph">Start with the cursor at the bottom left of your screen. Lift the pen and bring it down at the top right of the tablet. The cursor jumps straight to the top right. Where it started doesn't matter. That's absolute mapping, and it's why I could type a command with the pen still in my hand, then go straight back to the spot I wanted without dragging a cursor across the screen.</p>
 <p class="wp-block-paragraph">I looked at Astropad and Duet, but what I wanted most was a pen surface, not another screen. I built the iPad app and desktop companions myself and used them heavily during those six weeks. The Pencil maps to a whole display or a region, and pressure, tilt, and hover reach the drawing app over USB-C or local Wi-Fi. Display mode can mirror or extend the desktop, but you don't need to stream the screen to use the iPad as a pen tablet.</p>
-<div class="alignwide" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%, 15rem), 1fr));gap:1.5rem;align-items:start">
-  <figure class="wp-block-image" style="margin:0">
-    <img src="ipad-rail-pressure-solid.jpg" width="668" height="1200" loading="lazy" decoding="async" alt="iPad pressure curve editor with Soft, Linear, Firm, and Custom presets" style="width:auto;max-width:100%;max-height:32rem;height:auto">
-    <figcaption class="wp-element-caption">The pressure curve on iPad. Use a preset or tune how hard you need to press.</figcaption>
-  </figure>
-  <figure class="wp-block-image" style="margin:0">
+  <figure class="wp-block-image">
     <img src="mac-panel-connected.png" width="340" height="399" loading="lazy" decoding="async" alt="Mac menu-bar panel showing a 13-inch iPad Pro connected over USB, with mapping and pressure controls" style="width:auto;max-width:100%;height:auto">
     <figcaption class="wp-element-caption">The Mac companion shows the connected iPad and gives you quick access to mapping, pressure, and pause.</figcaption>
   </figure>
-</div>
 <p class="wp-block-paragraph"><a href="https://deusxt.com">Visit Deus XT</a> · <a href="/projects/">All projects</a></p></div>
 <div aria-hidden="true" class="wp-block-spacer wp-container-content-0a90f32d" style="height:256px"></div>
 <section class="wp-block-template-part"></section></main>
