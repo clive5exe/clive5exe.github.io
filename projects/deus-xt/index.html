@@ -21,7 +21,7 @@
 </script>
     <title>Deus XT: I built it after my sixth Wacom broke – Clive S. — AI Engineer</title>
 <meta name="description" content="How I turned an iPad and Apple Pencil into a drawing tablet after my sixth Wacom broke. The macOS build, Windows and Linux betas, and what I tested." />
-<link rel="stylesheet" href="case-study.css" />
+<link rel="stylesheet" href="case-study.css?v=2" />
 <link rel='dns-prefetch' href='https://clive5exe.github.io' />
 <style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
@@ -469,8 +469,8 @@ body.single main.wp-block-group > .wp-block-spacer{height:0 !important;display:n
 </header>
 
 
-<main class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-3e847da4 wp-block-group-is-layout-flex" id="wp--skip-link--target" style="margin-top:var(--wp--preset--spacing--50)">
-<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-a5347798 wp-block-group-is-layout-constrained"><h1 class="has-text-align-center wp-block-post-title" style="margin-bottom:var(--wp--preset--spacing--40)">Deus XT: I built it after my sixth Wacom broke</h1></div>
+<main class="deus-main wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-3e847da4 wp-block-group-is-layout-flex" id="wp--skip-link--target">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-a5347798 wp-block-group-is-layout-constrained"><h1 class="has-text-align-center wp-block-post-title">Deus XT: I built it after my sixth Wacom broke</h1></div>
 <article class="deus-case-study entry-content wp-block-post-content has-global-padding is-layout-constrained wp-container-core-post-content-is-layout-3339a43b wp-block-post-content-is-layout-constrained">
 <figure class="deus-figure deus-hero alignwide">
   <div class="deus-stage">
@@ -511,7 +511,7 @@ body.single main.wp-block-group > .wp-block-spacer{height:0 !important;display:n
 </figure>
 
 <h2 class="wp-block-heading">One iPad, three desktop input paths</h2>
-<p>The iPad app needs iPadOS 18 or later and a pressure-capable Apple Pencil. The <a href="https://deusxt.com/download.html">download page</a> lists the current macOS companion alongside two desktop betas. Windows and Linux share a Rust core, but getting those pen samples into a drawing app is a different job on each OS.</p>
+<p>The iPad app needs iPadOS 18 or later and a pressure-capable Apple Pencil. The <a href="https://deusxt.com/download.html">download page</a> lists macOS companion 1.1 alongside the Windows and Linux 0.1 betas. Windows and Linux share a Rust core, but getting those pen samples into a drawing app is a different job on each OS.</p>
 <dl class="deus-platforms">
   <div><dt>macOS</dt><dd>The menu-bar companion runs on Apple silicon with macOS 15 or later. It produces native tablet events, including pressure, tilt and proximity, and needs Accessibility permission to send input. It has Tablet and Display modes over USB-C or local Wi-Fi. Only Display needs Screen Recording.</dd></div>
   <div><dt><a href="https://deusxt.com/help-windows.html">Windows beta</a></dt><dd>64-bit Windows 10 (1809 or later) or 11. The companion sends pen input through Windows Ink on the primary monitor. An app set to Wintab only won't get pressure. Tablet mode is Wi-Fi only; no Display mode or USB.</dd></div>

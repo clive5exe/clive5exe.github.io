@@ -1,4 +1,11 @@
 /* Page-specific media framing and platform comparison. */
+.deus-main.wp-block-group { margin-block-start: clamp(1rem, 3vw, 2.5rem); }
+
+.deus-main .wp-block-post-title {
+  margin-block: 0;
+  text-wrap: balance;
+}
+
 body.single-post .deus-case-study > figure.deus-figure {
   --fig: min(730px, calc(100vw - 2 * var(--wp--style--root--padding-left, 1rem)));
   margin-block: 1.75rem 2.25rem;
@@ -10,7 +17,7 @@ body.single-post .deus-case-study > figure.deus-hero {
 }
 
 .deus-stage {
-  padding: clamp(.75rem, 3.2vw, 2rem);
+  padding: clamp(.75rem, 2.4vw, 1.5rem);
   background: radial-gradient(ellipse at 50% 25%, #5a473d, #261e1a);
   border: 1px solid #785c4c;
   border-radius: 12px;
@@ -18,7 +25,7 @@ body.single-post .deus-case-study > figure.deus-hero {
 
 .deus-ipad {
   box-sizing: border-box;
-  max-width: 660px;
+  max-width: 620px;
   margin-inline: auto;
   padding: clamp(5px, 1vw, 12px);
   border: 1px solid #817d7b;
