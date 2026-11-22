@@ -21,7 +21,7 @@
 </script>
     <title>Deus XT: I built it after my sixth Wacom broke – Clive S. — AI Engineer</title>
 <meta name="description" content="How I turned an iPad and Apple Pencil into a drawing tablet after my sixth Wacom broke. The macOS build, Windows and Linux betas, and what I tested." />
-<link rel="stylesheet" href="case-study.css?v=2" />
+<link rel="stylesheet" href="case-study.css?v=3" />
 <link rel='dns-prefetch' href='https://clive5exe.github.io' />
 <style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
@@ -473,11 +473,9 @@ body.single main.wp-block-group > .wp-block-spacer{height:0 !important;display:n
 <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-a5347798 wp-block-group-is-layout-constrained"><h1 class="has-text-align-center wp-block-post-title">Deus XT: I built it after my sixth Wacom broke</h1></div>
 <article class="deus-case-study entry-content wp-block-post-content has-global-padding is-layout-constrained wp-container-core-post-content-is-layout-3339a43b wp-block-post-content-is-layout-constrained">
 <figure class="deus-figure deus-hero alignwide">
-  <div class="deus-stage">
-    <div class="deus-ipad">
-      <img src="ipad-welcome.png" width="2064" height="1548" fetchpriority="high" alt="Deus XT welcome screen with an illustrated desktop computer and a Get started button">
-    </div>
-  </div>
+  <a class="deus-ipad" href="ipad-welcome.png" aria-label="Open the full-size Welcome screenshot">
+    <img src="ipad-welcome.png" width="2064" height="1548" fetchpriority="high" alt="Deus XT welcome screen with an illustrated desktop computer and a Get started button">
+  </a>
   <figcaption>Step one of six on the iPad. The welcome takes you through installing the companion, pairing and trying the Pencil before you send a stroke to the Mac.</figcaption>
 </figure>
 
@@ -488,7 +486,7 @@ body.single main.wp-block-group > .wp-block-spacer{height:0 !important;display:n
 <p>Tablet mode leaves the iPad as a drawing surface with no ink on the glass. I look at the desktop, just as I did with an Intuos. Start with the cursor at the bottom left, lift the Pencil, and bring it down at the top right of the iPad. The pointer goes straight to the corresponding corner. That's absolute mapping, and it's why I can type a command with the pen still in my hand and get back to the spot I wanted without dragging the cursor across the screen. I can map to one display or just the bit I'm working in, keep the proportions so circles stay round, or switch to relative mouse movement for menus.</p>
 <p>Hover tells me where the stroke will land on hardware that supports it. Tilt gives a brush the side of the pencil; the pressure curve decides how hard I have to press. Soft makes light strokes come through stronger, Firm saves the heaviest strokes for when I lean in, and I can drag the curve if neither preset suits my hand. On the Mac, <a href="https://deusxt.com/help-display-mode.html">Display mode</a> can mirror or extend the desktop onto the iPad. I use the same Pencil to draw directly on the picture instead of looking across at another screen.</p>
 <figure class="deus-figure">
-  <a class="deus-screen" href="ipad-pressure.png" aria-label="Open the full-size Pressure screenshot">
+  <a class="deus-ipad" href="ipad-pressure.png" aria-label="Open the full-size Pressure screenshot">
     <img src="ipad-pressure.png" width="2064" height="1548" loading="lazy" decoding="async" alt="Pressure editor with a five-point linear curve, presets and a Pencil test button">
   </a>
   <figcaption>The Pressure panel maps what the Pencil reads to what the drawing app receives. Linear is selected here; the points are editable, and the Pencil test is right below.</figcaption>
@@ -497,14 +495,14 @@ body.single main.wp-block-group > .wp-block-spacer{height:0 !important;display:n
 <h2 class="wp-block-heading">What my other hand does</h2>
 <p>The little things came out of using it every day. I wanted Space under my thumb for panning and modifiers beside it, rather than reaching for the keyboard in the middle of a stroke. App keys follow the foreground app, so the shortcuts can change when I switch tools. I can put undo on a squeeze or double-tap on supported Pencils, and a two-finger scroll handles the ordinary business of moving around a document.</p>
 <figure class="deus-figure">
-  <a class="deus-screen" href="ipad-app-keys.png" aria-label="Open the full-size App keys screenshot">
+  <a class="deus-ipad" href="ipad-app-keys.png" aria-label="Open the full-size App keys screenshot">
     <img src="ipad-app-keys.png" width="2064" height="1548" loading="lazy" decoding="async" alt="App keys panel with a wheel preview, visibility choices and a row of pinned apps">
   </a>
   <figcaption>App keys shows what's pinned to the app wheel and lets me keep it visible, bring it up near the Pencil, or wait for a squeeze.</figcaption>
 </figure>
 <p>Write is for the little interruptions that still need a keyboard: a layer name, a filename, a search. I put the cursor in a text field on the Mac, write on the iPad, and send the result to that field. Apple does the recognition on the iPad. The Mac gets text, not a picture of my handwriting.</p>
 <figure class="deus-figure">
-  <a class="deus-screen" href="ipad-write.png" aria-label="Open the full-size Write screenshot">
+  <a class="deus-ipad" href="ipad-write.png" aria-label="Open the full-size Write screenshot">
     <img src="ipad-write.png" width="2064" height="1548" loading="lazy" decoding="async" alt="Write panel with handwritten hello, the recognized word above it and a Send button">
   </a>
   <figcaption>Write shows the ink and the recognized text separately. The “hello” in the top field is what goes to the focused app on the Mac.</figcaption>
@@ -521,7 +519,7 @@ body.single main.wp-block-group > .wp-block-spacer{height:0 !important;display:n
 <h2 class="wp-block-heading">What stays on the desk</h2>
 <p>On Mac, the Wi-Fi link runs over QUIC with TLS 1.3. Confirming the matching pairing code on both devices establishes trust; the pairing keys stay in each device's Keychain. Once Wi-Fi is paired, Auto uses the cable when it's plugged in and falls back to the local network when I unplug it. Display mode adds a stream in the other direction: ScreenCaptureKit captures the Mac screen, VideoToolbox encodes it as H.264, and Metal draws it on the iPad. The stream isn't recorded or uploaded. There's no account or cloud relay for drawing.</p>
 <figure class="deus-figure">
-  <a class="deus-screen" href="ipad-connection.png" aria-label="Open the full-size connection screenshot">
+  <a class="deus-ipad" href="ipad-connection.png" aria-label="Open the full-size connection screenshot">
     <img src="ipad-connection.png" width="2064" height="1548" loading="lazy" decoding="async" alt="iPad connection panel with the Mac connected over USB and Tablet selected">
   </a>
   <figcaption>The iPad's Mac panel, with USB and Tablet selected. Route and drawing mode are separate choices. The badge tells me how I'm connected, not how long a stroke takes to reach the screen.</figcaption>

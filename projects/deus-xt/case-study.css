@@ -12,26 +12,20 @@ body.single-post .deus-case-study > figure.deus-figure {
 }
 
 body.single-post .deus-case-study > figure.deus-hero {
-  --fig: min(920px, calc(100vw - 2 * var(--wp--style--root--padding-left, 1rem)));
   margin-block-start: 0;
 }
 
-.deus-stage {
-  padding: clamp(.75rem, 2.4vw, 1.5rem);
-  background: radial-gradient(ellipse at 50% 25%, #5a473d, #261e1a);
-  border: 1px solid #785c4c;
-  border-radius: 12px;
-}
-
 .deus-ipad {
+  display: block;
   box-sizing: border-box;
-  max-width: 620px;
+  max-width: 680px;
   margin-inline: auto;
-  padding: clamp(5px, 1vw, 12px);
-  border: 1px solid #817d7b;
-  border-radius: clamp(12px, 2.5vw, 24px);
-  background: #131214;
-  box-shadow: 0 10px 22px #0008;
+  padding: clamp(6px, 1vw, 12px);
+  border: 2px solid #666;
+  border-radius: clamp(15px, 2.5vw, 27px);
+  background: #111;
+  box-shadow: 0 1px 1px #0003, 0 8px 20px #0002;
+  cursor: zoom-in;
 }
 
 .deus-figure img {
@@ -40,20 +34,12 @@ body.single-post .deus-case-study > figure.deus-hero {
   height: auto;
 }
 
-.deus-ipad img { border-radius: clamp(7px, 1.25vw, 13px); }
-
-.deus-screen {
-  display: block;
-  border: 1px solid #777;
-  border-radius: 8px;
-  overflow: hidden;
-  cursor: zoom-in;
-}
-
-.deus-screen:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.deus-ipad img { border-radius: clamp(8px, 1.4vw, 15px); }
+.deus-ipad:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 
 body.single-post .deus-case-study .deus-figure figcaption {
-  margin-block: .65rem 0;
+  max-width: 680px;
+  margin: .8rem auto 0;
   text-align: left;
   font-size: .875rem;
   font-weight: 400;
